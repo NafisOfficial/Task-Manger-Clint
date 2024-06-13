@@ -4,8 +4,9 @@ import { FaCircleCheck } from "react-icons/fa6";
 
 const Features = () => {
     return (
-        <div>
-            <h1 className='md:mt-16 md:text-4xl my-5 text-xl text-center font-bold '>Our Features</h1>
+        <div className='mb-5'>
+            <h1 className='md:mt-16 md:text-4xl mt-5 text-xl text-center font-bold '>Our Features</h1>
+            <p className='text-center mx-5'>Our goal is to help people focus to finis there daily task.</p>
             <div className='flex md:flex-row flex-col justify-center items-center'>
                 <img src={img1} className='md:w-2/5 w-4/5' alt="features" />
                 <div>
