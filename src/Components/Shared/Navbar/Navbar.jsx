@@ -8,8 +8,9 @@ const Navbar = () => {
                 <Link to="/" className="btn btn-ghost text-xl text-white">Focus</Link>
             </div>
             <div className="navbar-end gap-3">
+                <Link to="/focus" className="md:px-5 px-2 text-white">Goto Focus</Link>
                 <Link to="/login" className="btn bg-[#51DACF] border-none md:btn-md btn-sm md:px-5 px-2 text-white">Login</Link>
-                <Link to="/Signup" className="btn bg-[#51DACF] border-none md:btn-md btn-sm md:px-5 px-2 text-white">Signup</Link>
+                <Link to="/Signup" className="btn bg-[#51DACF] border-none md:flex hidden md:btn-md btn-sm md:px-5 px-2 text-white">Signup</Link>
             </div>
         </div>
     );
