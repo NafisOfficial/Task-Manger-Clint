@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
-import { app } from "../Firebase/Firebase.config";
+import { app } from "../Firebase/firebase.confiq";
 
 export const AuthContex = createContext(null)
 
@@ -21,6 +21,9 @@ const AuthProvider = ( {children} ) => {
     }
 
     const handleSignUpByGoogle=(provider)=>{
+        return signInWithPopup(auth,provider)
+    }
+    const handleSignupWithGithub=(provider)=>{
         return signInWithPopup(auth,provider)
     }
 
@@ -49,6 +52,7 @@ const AuthProvider = ( {children} ) => {
         handleLogin,
         handleSignUp,
         handleSignUpByGoogle,
+        handleSignupWithGithub,
         handleLogOut
     }
 
