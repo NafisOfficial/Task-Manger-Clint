@@ -15,7 +15,7 @@ const AddTask = () => {
     const {register, handleSubmit} = useForm();
 
     const onSubmit = data =>{
-        fetch("http://localhost:3000/todo",{
+        fetch("https://task-manager-server-rouge.vercel.app/todo",{
             method:"POST",
             headers:{
                 "Content-Type" : "application/json"

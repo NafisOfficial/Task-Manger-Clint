@@ -1,12 +1,12 @@
 import {
-    createBrowserRouter
-  } from "react-router-dom";
+  createBrowserRouter
+} from "react-router-dom";
 import Rootes from "../../Layouts/Rootes/Rootes";
+import AddTask from "../../Pages/AddTask/AddTask";
+import Focus from "../../Pages/Focus/Focus";
 import Home from "../../Pages/Home/Home";
 import Login from "../../Pages/Login/Login";
 import Signup from "../../Pages/Signup/Signup";
-import Focus from "../../Pages/Focus/Focus";
-import AddTask from "../../Pages/AddTask/AddTask";
 
 
 
@@ -30,7 +30,7 @@ import AddTask from "../../Pages/AddTask/AddTask";
         {
           path:'focus',
           element:<Focus/>,
-          loader: ()=>fetch("http://localhost:3000/todo")
+          loader: ()=>fetch("https://task-manager-server-rouge.vercel.app/todo")
         },
         {
           path:'add-task',
