@@ -55,7 +55,7 @@ const Navbar = () => {
     return (
         <div className="navbar bg-[#7469B6] sticky top-0 z-20">
             <div className="navbar-start">
-                <Link to="/" className="btn btn-ghost text-xl text-white">Focus</Link>
+                <Link to="/focus" className="btn btn-ghost text-xl text-white">Focus</Link>
             </div>
             <div className="navbar-end gap-3">
                 <Link to="/focus" className="md:px-5 px-2 text-white">Goto Focus</Link>
